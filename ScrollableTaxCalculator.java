@@ -13,8 +13,8 @@ public class ScrollableTaxCalculator extends JFrame {
     JSlider slider;
     JPanel sliderPanel;
     // windows width and height
-    final int WIDTH = 300;
-    final int HEIGHT = 150;
+    // final int WIDTH = 300;
+    // final int HEIGHT = 150;
     // sliders minimum and maximum figures and starting position
     final int MIN = 0;
     final int MAX = 10;
@@ -23,7 +23,7 @@ public class ScrollableTaxCalculator extends JFrame {
     // constructor
     public ScrollableTaxCalculator() {
         setTitle("Scrollable Tax Calculator");
-        setSize(WIDTH, HEIGHT);
+        // setSize(WIDTH, HEIGHT);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         // set layout
         setLayout(new BorderLayout());
@@ -36,6 +36,8 @@ public class ScrollableTaxCalculator extends JFrame {
         add(inputPanel, BorderLayout.NORTH);
         add(outputPanel, BorderLayout.CENTER);
         add(sliderPanel, BorderLayout.SOUTH);
+        pack();
+        setVisible(true);
     }
 
     // creating the build input panel
